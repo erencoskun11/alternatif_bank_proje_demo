@@ -1,0 +1,35 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.second_ptoject">
+
+    <!-- Kamera izni (runtime da isteniyor, kodunda zaten var) -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Flaşın zorunlu olmadığını belirt -->
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="Second Project"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- 2. ekran -->
+        <activity
+            android:name=".SecondActivity"
+            android:exported="false" />
+
+        <!-- 3. ekran (onay ekranı) -->
+        <activity
+            android:name=".ThirdActivity"
+            android:exported="false" />
+
+        <!-- Başlatıcı aktivite -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
