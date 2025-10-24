@@ -1,0 +1,15 @@
+PROJE OZETI
+Kısıtlı gorme engelli ve gorme engelli bireylere ağız okuma ve fısıltı algılama ile sifre girme , para transferi talimati verme ve fatura odeme.
+
+
+Kullanılan Teknolojiler ve Framework'ler
+Microsoft Face API,
+Head Pose Estimation,
+Azure Key Vault,
+Speech Playground
+
+Mimari Ozeti
+Alternatif Bank'ın mobil uygulamasına entegre olacak ; 
+Ağız okuma butonuna tıklandığında api üzerinden makine oğrenmesi ile eğitilen modeli kullanarak kullanıcının söylemek istedigi inputu sese dönüşturecek,
+bir kulaklık yardımıyla kullanıcıdan eger bu talimatin yapılmasını onaylıyorsanız başınızı hafifçe sağa yatırın onaylamıyorsanız sola yatırın diyecek.
+
